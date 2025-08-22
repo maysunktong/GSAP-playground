@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export default function GsapFromTo() {
-  /* gsap.to() */
+
   useGSAP(() => {
     gsap.fromTo(
       "#box-green",
@@ -20,13 +20,13 @@ export default function GsapFromTo() {
   }, []);
   return (
     <>
-      <p className="text-3xl py-6">3. GsapFromTo</p>
+      <a href="https://gsap.com/docs/v3/GSAP/gsap.fromTo()" target="_blank">
+        <p className="py-3 text-3xl">3. GsapFromTo</p>
+      </a>
       <div
         id="box-green"
         className="w-20 h-20 bg-green-600 border-2 rounded-lg flex justify-center items-center text-3xl font-bold"
-      >
-        A
-      </div>
+      />
     </>
   );
 }

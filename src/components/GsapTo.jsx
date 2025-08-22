@@ -10,18 +10,18 @@ export default function GsapTo() {
       yoyo: true,
       rotation: 180,
       duration: 3,
-      ease: 'elastic.inOut'
+      ease: "elastic.inOut",
     });
   }, []);
   return (
     <>
-      <p className="text-3xl py-6">1. GsapTo</p>
+      <a href="https://gsap.com/docs/v3/GSAP/gsap.to()" target="_blank">
+        <p className="text-3xl py-6">1. GsapTo</p>
+      </a>
       <div
         id="box-amber"
         className="w-20 h-20 bg-amber-600 border-2 rounded-lg flex justify-center items-center text-3xl font-bold"
-      >
-        A
-      </div>
+      />
     </>
   );
 }
