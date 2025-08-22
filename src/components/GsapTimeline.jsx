@@ -2,7 +2,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export default function GsapTimeline() {
-
   const timeline = gsap.timeline({
     repeat: -1,
     repeatDelay: 1,
@@ -35,7 +34,7 @@ export default function GsapTimeline() {
     });
   }, []);
   return (
-    <>
+    <div className="h-86">
       <a href="https://gsap.com/docs/v3/GSAP/gsap.timeline()" target="_blank">
         <p className="py-3 text-3xl">4. GsapTimeline</p>
       </a>
@@ -43,7 +42,7 @@ export default function GsapTimeline() {
         type="button"
         className="py-4"
         onClick={() => {
-         timeline.paused() ? timeline.play() : timeline.pause()
+          timeline.paused() ? timeline.play() : timeline.pause();
         }}
       >
         Play/Pause
@@ -52,6 +51,6 @@ export default function GsapTimeline() {
         id="box-blue"
         className="w-20 h-20 bg-blue-600 border-2 rounded-lg flex justify-center items-center text-3xl font-bold"
       />
-    </>
+    </div>
   );
 }

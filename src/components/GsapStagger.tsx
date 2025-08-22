@@ -4,7 +4,7 @@ import gsap from "gsap";
 export default function GsapStagger() {
   useGSAP(() => {
     gsap.to(".stagger", {
-      y: 50,
+      y: 100,
       rotation: 360,
       borderRadius: "100%",
       yoyo: true,
@@ -12,7 +12,7 @@ export default function GsapStagger() {
       /* stagger: 0.5, */
       stagger: {
         amount: 1.5,
-        grid: [2, 1],
+        grid: [1, 1],
         axis: "y",
         ease: "circ.inOut",
         from: "center",
@@ -21,7 +21,7 @@ export default function GsapStagger() {
   }, []);
 
   return (
-    <>
+    <div className="h-96">
       <a
         href="https://gsap.com/resources/getting-started/Staggers/"
         target="_blank"
@@ -43,6 +43,6 @@ export default function GsapStagger() {
         <div className="w-10 h-10 bg-yellow-600 stagger" />
         <div className="w-10 h-10 bg-yellow-600 stagger" />
       </div>
-    </>
+    </div>
   );
 }
